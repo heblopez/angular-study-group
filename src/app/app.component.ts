@@ -15,7 +15,7 @@ import { NavbarComponent } from "./navbar/navbar.component";
           alt="logo"
           aria-hidden="true"
         />
-        <app-navbar [optionsMenu]="['Inicio', 'Contacto', 'Acerca de']"/>
+        <app-navbar [optionsMenu]="navOptions"/>
       </header>
       <section class="content">
         <app-home></app-home>
@@ -26,4 +26,9 @@ import { NavbarComponent } from "./navbar/navbar.component";
 })
 export class AppComponent {
   title = "homes";
+
+  navOptions = [{option: 'Inicio', linkTo: '/'},
+    {option: 'Contacto', linkTo: 'contact'},
+    {option: 'Acerca de', linkTo: 'about'},
+  ]
 }

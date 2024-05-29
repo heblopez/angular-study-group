@@ -15,3 +15,12 @@ li:hover {
   color: var(--primary-color);
   cursor: pointer;
 }
+
+a {
+  text-decoration: none;
+  color: var(--primary-color)
+}
+
+a:visited {
+  color: inherit;
+}

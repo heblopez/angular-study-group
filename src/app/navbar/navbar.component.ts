@@ -7,15 +7,12 @@ import { Component, Input } from '@angular/core';
   template: `
     <ul>
       @for (item of optionsMenu; track $index) {
-        <li>{{item}}</li>
+        <li><a [href]="item.linkTo">{{item.option}}</a></li>
       }
     </ul>
   `,
   styleUrl: "./navbar.component.css"
 })
 export class NavbarComponent {
-  @Input() optionsMenu!: string[]
-  constructor() {
-    console.log(this.optionsMenu);
-  }
+  @Input() optionsMenu!: {option: string, linkTo: string}[]
 }
