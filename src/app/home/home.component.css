@@ -1,3 +1,7 @@
+.content {
+  margin-inline: 2rem;
+}
+
 .results {
   display: grid;
   column-gap: 14px;

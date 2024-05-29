@@ -2,10 +2,15 @@
   --content-padding: 10px;
 }
 header {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   height: 60px;
   padding: var(--content-padding);
   box-shadow: 0px 5px 25px var(--shadow-color);
+
+  img {
+    margin-inline: 2rem;
+  }
 }
 .content {
   padding: var(--content-padding);

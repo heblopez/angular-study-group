@@ -1,0 +1,17 @@
+ul {
+  margin-inline: 2rem;
+  display: flex;
+  height: 100%;
+  align-content: center;
+  gap: 4rem;
+  list-style: none;
+}  
+
+ul li {
+  align-self: center;
+}
+
+li:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
